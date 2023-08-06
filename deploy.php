@@ -22,8 +22,8 @@ host('167.172.84.236')
 // Hooks
 
 task('deploy:build_assets', function () {
-  runLocally('npm run build');
-  upload('docs/.vitepress/dist', '{{release_path}}/docs/.vitepress');
+  runLocally('npm run docs:build');
+  upload('.vitepress/dist', '{{release_path}}/.vitepress');
 });
 
 after('deploy:failed', 'deploy:unlock');
