@@ -44,6 +44,13 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
 
+    docFooter: {
+      prev: 'Өмнөх хуудас',
+      next: 'Дараагын хуудас',
+    },
+
+    outlineTitle: 'Энэ хуудсанд',
+
     search: {
       provider: 'local',
       options: {
