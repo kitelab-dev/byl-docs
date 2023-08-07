@@ -28,8 +28,7 @@ export default defineConfig({
               { text: 'General', link: '/api/' },
               { text: 'API token', link: '/api/api-token' },
               { text: 'Invoices', link: '/api/invoices' },
-              { text: 'Checkouts', link: '/api/checkouts' },
-              { text: 'Payments', link: '/api/payments' },
+              { text: 'Checkouts', link: '/api/checkouts' }
             ]
           },
           {
