@@ -25,8 +25,6 @@ $ curl -X POST https://byl.mn/api/v1/projects/1/invoices \
     -D '{ "amount": 10, "description": "Test invoice", "auto_advance": true }'
 ```
 
-Дээрх өгөгдсөн `BYL_TOKEN`-р танийг таних үйлдэл хийгдэж таны удирдаж буй 1 дугаартай төсөлд шинээр нэхэмжлэх үүсгэж байна. Ингээд дараахь жишээ хариу буцах болмно.
-
 **Жишээ гаралт**
 
 ```json

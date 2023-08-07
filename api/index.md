@@ -8,7 +8,7 @@ outline: deep
 
 ## API endpoints
 
-Byl-ийн бүх API endpoint-ууд https://byl.mn/api хаягаар эхлэх бөгөөд REST стандартын дагуу ажиллах болно.
+Byl-ийн бүх API endpoint-ууд `https://byl.mn/api` хаягаар эхлэх бөгөөд REST стандартын дагуу ажиллах болно.
 
 API дуудах http method-ууд:
 
