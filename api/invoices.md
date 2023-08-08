@@ -1,5 +1,25 @@
 # Нэхэмжлэх
 
+Мөнгөн дүнгээр төлбөрийн нэхэмжлэх үүсгэх боломжтой бөгөөд дахин давташгүй веб хаяг `hosted_invoice_url` буцах болно. Та энэ хаягыг ашиглан харилцагчаа төлбөрийн буланд чиглүүлэх боломжтой юм.
+
+Хэрэв та [webhook](/webhook) тохиргоо хийсэн бол нэхэмжлэх төлөгдсөн талаарх мэдэгдэлийг цаг алдалгүй өөрийн системд хүлээн авах боломжтой юм.
+
+## Нэхэмжлэх обьект
+
+| Параметер            | Төрөл   | Тайлбар                                 |
+| -------------------- | ------- | --------------------------------------- |
+| `status`             | String  | Төлөв: draft, open, paid, void          |
+| `amount`             | Number  | Мөнгөн дүн.                             |
+| `description`        | String  | Тайлбар.                                |
+| `auto_advance`       | Boolean | Автоматаар эцэслэх.                     |
+| `number`             | String  | Дахин давтагдашгүй нэхэмжлэхийн дугаар. |
+| `project_id`         | String  | Byl төслийн ID.                         |
+| `due_due`            | Date    | Төлвөл зохих эцсийн хугацаа.            |
+| `created_at`         | Date    | Анх үүссэн огноо.                       |
+| `updated_at`         | Date    | Өөрчлөлт орсон огноо.                   |
+| `id`                 | Number  | Нэхэмжлэхийн ID.                        |
+| `hosted_invoice_url` | Number  | Нэхэмжлэхийн веб хуудас.                |
+
 ## Нэхэмжлэх үүсгэх
 
 - HTTP Method: `POST`
@@ -39,7 +59,7 @@ $ curl -X POST https://byl.mn/api/v1/projects/1/invoices \
     "updated_at": "2023-08-05T13:13:07.000000Z",
     "created_at": "2023-08-05T13:13:07.000000Z",
     "id": 2,
-    "hosted_invoice_url": "https://checkout.byl.mn/i/2/1rAXrIZdvbU3fEJTghVd8QLq5QFGkH0P"
+    "hosted_invoice_url": "https://checkout.byl.mn/i/109/s2lA248QpRAc9Ys4PAuA1brNbf3eU5sL"
   }
 }
 ```
