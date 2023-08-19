@@ -143,7 +143,7 @@ Checkout амжилттай төлөгдсөн үед `checkout.completed` тө�
       "phone_number": "99999999",
       "customer_email": "tester@test.mn",
       "amount_subtotal": 50,
-      "payment_gateway": "qpay",
+      "payment_method": "qpay",
       "client_reference_id": null,
       "phone_number_collection": true
     }
