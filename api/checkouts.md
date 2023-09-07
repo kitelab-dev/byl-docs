@@ -10,7 +10,7 @@ Checkout боломжыг ашиглан та хэрэглэгчийн нэг у
 
 - HTTP Method: `POST`
 - Content Type: `application/json`
-- URL: `https://byl.mn/api/v1/checkouts`
+- URL: `https://byl.mn/api/v1/projects/1/checkouts`
 
 **Параметер**
 
