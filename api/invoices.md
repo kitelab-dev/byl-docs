@@ -1,24 +1,24 @@
 # Нэхэмжлэх
 
-Мөнгөн дүнгээр төлбөрийн нэхэмжлэх үүсгэх боломжтой бөгөөд дахин давташгүй веб хаяг `hosted_invoice_url` буцах болно. Та энэ хаягыг ашиглан харилцагчаа төлбөрийн буланд чиглүүлэх боломжтой юм.
+Мөнгөн дүнгээр төлбөрийн нэхэмжлэх үүсгэх боломжтой бөгөөд дахин давташгүй веб хаяг `url` буцах болно. Та энэ хаягыг ашиглан харилцагчаа төлбөрийн буланд чиглүүлэх боломжтой юм.
 
 Хэрэв та [webhook](/webhook) тохиргоо хийсэн бол нэхэмжлэх төлөгдсөн талаарх мэдэгдэлийг цаг алдалгүй өөрийн системд хүлээн авах боломжтой юм.
 
 ## Нэхэмжлэх обьект
 
-| Параметер            | Төрөл   | Тайлбар                                 |
-| -------------------- | ------- | --------------------------------------- |
-| `status`             | String  | Төлөв: draft, open, paid, void          |
-| `amount`             | Number  | Мөнгөн дүн.                             |
-| `description`        | String  | Тайлбар.                                |
-| `auto_advance`       | Boolean | Автоматаар эцэслэх.                     |
-| `number`             | String  | Дахин давтагдашгүй нэхэмжлэхийн дугаар. |
-| `project_id`         | String  | Byl төслийн ID.                         |
-| `due_due`            | Date    | Төлвөл зохих эцсийн хугацаа.            |
-| `created_at`         | Date    | Анх үүссэн огноо.                       |
-| `updated_at`         | Date    | Өөрчлөлт орсон огноо.                   |
-| `id`                 | Number  | Нэхэмжлэхийн ID.                        |
-| `hosted_invoice_url` | Number  | Нэхэмжлэхийн веб хуудас.                |
+| Параметер      | Төрөл   | Тайлбар                                 |
+| -------------- | ------- | --------------------------------------- |
+| `status`       | String  | Төлөв: draft, open, paid, void          |
+| `amount`       | Number  | Мөнгөн дүн.                             |
+| `description`  | String  | Тайлбар.                                |
+| `auto_advance` | Boolean | Автоматаар эцэслэх.                     |
+| `number`       | String  | Дахин давтагдашгүй нэхэмжлэхийн дугаар. |
+| `project_id`   | String  | Byl төслийн ID.                         |
+| `due_due`      | Date    | Төлвөл зохих эцсийн хугацаа.            |
+| `created_at`   | Date    | Анх үүссэн огноо.                       |
+| `updated_at`   | Date    | Өөрчлөлт орсон огноо.                   |
+| `id`           | Number  | Нэхэмжлэхийн ID.                        |
+| `url`          | Number  | Нэхэмжлэхийн веб хуудас.                |
 
 ## Нэхэмжлэх үүсгэх
 
@@ -59,7 +59,7 @@ $ curl -X POST https://byl.mn/api/v1/projects/1/invoices \
     "updated_at": "2023-08-05T13:13:07.000000Z",
     "created_at": "2023-08-05T13:13:07.000000Z",
     "id": 2,
-    "hosted_invoice_url": "https://checkout.byl.mn/i/109/s2lA248QpRAc9Ys4PAuA1brNbf3eU5sL"
+    "url": "https://checkout.byl.mn/i/109/s2lA248QpRAc9Ys4PAuA1brNbf3eU5sL"
   }
 }
 ```
@@ -93,7 +93,7 @@ $ curl -X GET https://byl.mn/api/v1/projects/1/invoices/2 \
     "updated_at": "2023-08-05T13:13:07.000000Z",
     "created_at": "2023-08-05T13:13:07.000000Z",
     "id": 2,
-    "hosted_invoice_url": "https://checkout.byl.mn/i/109/s2lA248QpRAc9Ys4PAuA1brNbf3eU5sL"
+    "url": "https://checkout.byl.mn/i/109/s2lA248QpRAc9Ys4PAuA1brNbf3eU5sL"
   }
 }
 ```
@@ -127,7 +127,7 @@ $ curl -X POST https://byl.mn/api/v1/projects/1/invoices/2/void \
     "customer_id": null,
     "number": "BYL-0008",
     "project_id": 5,
-    "hosted_invoice_url": "https://checkout.byl.mn/i/157/BXohJHcL94pEn4G1mZ2xX2DKJmTq5uhX",
+    "url": "https://checkout.byl.mn/i/157/BXohJHcL94pEn4G1mZ2xX2DKJmTq5uhX",
     "due_date": "2023-09-08T16:33:41.000000Z",
     "created_at": "2023-09-07T16:33:41.000000Z",
     "updated_at": "2023-09-07T16:33:50.000000Z"

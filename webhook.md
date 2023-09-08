@@ -79,7 +79,7 @@ Byl веб хуудаснаас сүүлд илгээсэн хүсэлтүүди
       "project_id": 1,
       "updated_at": "2023-08-07T16:14:16.000000Z",
       "description": "First invoice",
-      "hosted_invoice_url": "http://checkout.byl.test/i/3/wt960MQyhSrXKKV8tgrX69MNXnQglvia"
+      "url": "http://checkout.byl.test/i/3/wt960MQyhSrXKKV8tgrX69MNXnQglvia"
     }
   },
   "created_at": "2023-08-07T16:14:16.000000Z",
