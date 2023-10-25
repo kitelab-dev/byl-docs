@@ -6,6 +6,23 @@ Checkout боломжыг ашиглан та хэрэглэгчийн нэг у
 
 Хэрэв та [webhook](/webhook) тохиргоо хийсэн бол Checkout төлөгдсөн талаарх мэдэгдэлийг цаг алдалгүй өөрийн системд хүлээн авах боломжтой юм.
 
+## Checkout обьект
+
+| Параметер             | Төрөл   | Тайлбар                                      |
+| --------------------- | ------- | -------------------------------------------- |
+| `status`              | String  | Төлөв: open, complete, expired               |
+| `mode`                | string  | Худалдан авлтын горим: subscription, payment |
+| `client_reference_id` | String  | Харилцагчийн систем дахь таних дугаар.       |
+| `amount_subtotal`     | Number  | Нийт дүн.                                    |
+| `amount_total`        | Number  | Нийт дүн.                                    |
+| `expires_at`          | Date    | Төлвөл зохих эцсийн хугацаа.                 |
+| `created_at`          | Date    | Анх үүссэн огноо.                            |
+| `updated_at`          | Date    | Өөрчлөлт орсон огноо.                        |
+| `id`                  | Number  | Checkout ID.                                 |
+| `customer_id`         | Number  | Харилцагчын ID.                              |
+| `customer_email`      | String  | Харилцагчын и-мэйл хаяг.                     |
+| `is_guest`            | Boolean | Зочин харилцагч эсэх?                        |
+
 ## Checkout үүсгэх
 
 - HTTP Method: `POST`
