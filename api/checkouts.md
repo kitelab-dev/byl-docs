@@ -61,8 +61,45 @@ $ curl -X POST https://byl.mn/api/v1/projects/1/checkouts \
 ```json
 {
   "data": {
-    "id": 69,
-    "url": "https://checkout.byl.mn/checkout/69/mks23qF6"
+    "id": 71,
+    "url": "https://checkout.byl.mn/checkout/71/mks23qF6"
+  }
+}
+```
+
+## Checkout лавлах
+
+- HTTP Method: `GET`
+- Content Type: `application/json`
+- URL: `https://byl.mn/api/v1/projects/1/checkouts/71`
+
+**Жишээ хүсэлт**
+
+```shell
+BYL_TOKEN="таны API token"
+$ curl -X GET https://byl.mn/api/v1/projects/1/checkouts/71 \
+    -H "Authorization: Bearer $BYL_TOKEN" \
+    -H 'Accept: application/json'
+```
+
+**Жишээ гаралт**
+
+```json
+{
+  "data": {
+    "id": 71,
+    "url": "http://checkout.byl.mn/checkout/71/5Lg1KKIo",
+    "client_reference_id": null,
+    "mode": "payment",
+    "status": "open",
+    "expires_at": "2023-10-25T16:00:00.000000Z",
+    "amount_subtotal": 1000,
+    "amount_total": 1000,
+    "customer_id": null,
+    "customer_email": null,
+    "is_guest": true,
+    "created_at": "2023-10-25T10:27:49.000000Z",
+    "updated_at": "2023-10-25T10:27:49.000000Z"
   }
 }
 ```
