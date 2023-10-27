@@ -42,12 +42,16 @@ Checkout боломжыг ашиглан та хэрэглэгчийн нэг у
 
 items[] - Бүтээгдэхүүний жагсаалт
 
-| Параметер                                                 | Төрөл  | Заавал эсэх | Тайлбар                                    |
-| --------------------------------------------------------- | ------ | ----------- | ------------------------------------------ |
-| `items[0][price_data][unit_amount]`                       | Number | true        | Бүтээгдэхүүний нэгж үнэ.                   |
-| `items[0][price_data][product_data][name]`                | String | true        | Бүтээгдэхүүний нэр.                        |
-| `items[0][price_data][product_data][client_reference_id]` | String | true        | Харилцагчын систем дахь бүтээгдэхүүний ID. |
-| `items[0][quantity]`                                      | Number | true        | Тоо хэмжээ.                                |
+| Параметер                                                 | Төрөл  | Заавал эсэх | Тайлбар                                           |
+| --------------------------------------------------------- | ------ | ----------- | ------------------------------------------------- |
+| `items[0][price_data][unit_amount]`                       | Number | true        | Бүтээгдэхүүний нэгж үнэ.                          |
+| `items[0][price_data][product_data][name]`                | String | true        | Бүтээгдэхүүний нэр.                               |
+| `items[0][price_data][product_data][client_reference_id]` | String | true        | Харилцагчын систем дахь бүтээгдэхүүний ID.        |
+| `items[0][quantity]`                                      | Number | true        | Тоо хэмжээ.                                       |
+| `items[0][adjustable_quantity]`                           | Object | false       | Тоо хэмжээг засах боломжтой болгох                |
+| `items[0][adjustable_quantity][enabled]`                  | Bool   | true        | Тоо хэмжээг засах боломж идэвхтэй эсэх            |
+| `items[0][adjustable_quantity][min]`                      | Number | false       | Тоо хэмжээ талбарт оруулж болох хамгийн бага дүн  |
+| `items[0][adjustable_quantity][max]`                      | Number | false       | Тоо хэмжээ талбарт оруулж болох хамгийн их дүн    |
 
 **Жишээ хүсэлт**
 
