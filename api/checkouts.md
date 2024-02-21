@@ -31,27 +31,28 @@ Checkout боломжыг ашиглан та хэрэглэгчийн нэг у
 
 **Параметер**
 
-| Параметер                 | Төрөл  | Заавал эсэх | Тайлбар                                        |
-| ------------------------- | ------ | ----------- | ---------------------------------------------- |
-| `success_url`             | String | false       | Төлбөр амжилттай төлөгдсөний дараа буцах хаяг. |
-| `cancel_url`              | String | false       | Худалдан авалт цуцлах үед буцах хаяг.          |
-| `items[]`                 | Array  | true        | Бүтээгдэхүүний жагсаалт.                       |
-| `phone_number_collection` | Bool   | false       | Утасны дугаар авах талбар идэвхжүүлэх.         |
-| `customer_email`          | String | false       | Хэрэглэгчийн и-мэйл хаяг.                      |
-| `client_reference_id`     | String | false       | Харилцагчын дахин давтагдашгүй дугаар.         |
+| Параметер                     | Төрөл  | Заавал эсэх | Тайлбар                                        |
+| ----------------------------- | ------ | ----------- | ---------------------------------------------- |
+| `success_url`                 | String | false       | Төлбөр амжилттай төлөгдсөний дараа буцах хаяг. |
+| `cancel_url`                  | String | false       | Худалдан авалт цуцлах үед буцах хаяг.          |
+| `items[]`                     | Array  | true        | Бүтээгдэхүүний жагсаалт.                       |
+| `phone_number_collection`     | Bool   | false       | Утасны дугаар авах талбар идэвхжүүлэх.         |
+| `delivery_address_collection` | Bool   | false       | Хүргэлтийн хаяг авах талбар идэвхжүүлэх.       |
+| `customer_email`              | String | false       | Хэрэглэгчийн и-мэйл хаяг.                      |
+| `client_reference_id`         | String | false       | Харилцагчын дахин давтагдашгүй дугаар.         |
 
 items[] - Бүтээгдэхүүний жагсаалт
 
-| Параметер                                                 | Төрөл  | Заавал эсэх | Тайлбар                                           |
-| --------------------------------------------------------- | ------ | ----------- | ------------------------------------------------- |
-| `items[0][price_data][unit_amount]`                       | Number | true        | Бүтээгдэхүүний нэгж үнэ.                          |
-| `items[0][price_data][product_data][name]`                | String | true        | Бүтээгдэхүүний нэр.                               |
-| `items[0][price_data][product_data][client_reference_id]` | String | true        | Харилцагчын систем дахь бүтээгдэхүүний ID.        |
-| `items[0][quantity]`                                      | Number | true        | Тоо хэмжээ.                                       |
-| `items[0][adjustable_quantity]`                           | Object | false       | Тоо хэмжээг засах боломжтой болгох                |
-| `items[0][adjustable_quantity][enabled]`                  | Bool   | true        | Тоо хэмжээг засах боломж идэвхтэй эсэх            |
-| `items[0][adjustable_quantity][min]`                      | Number | false       | Тоо хэмжээ талбарт оруулж болох хамгийн бага дүн  |
-| `items[0][adjustable_quantity][max]`                      | Number | false       | Тоо хэмжээ талбарт оруулж болох хамгийн их дүн    |
+| Параметер                                                 | Төрөл  | Заавал эсэх | Тайлбар                                          |
+| --------------------------------------------------------- | ------ | ----------- | ------------------------------------------------ |
+| `items[0][price_data][unit_amount]`                       | Number | true        | Бүтээгдэхүүний нэгж үнэ.                         |
+| `items[0][price_data][product_data][name]`                | String | true        | Бүтээгдэхүүний нэр.                              |
+| `items[0][price_data][product_data][client_reference_id]` | String | true        | Харилцагчын систем дахь бүтээгдэхүүний ID.       |
+| `items[0][quantity]`                                      | Number | true        | Тоо хэмжээ.                                      |
+| `items[0][adjustable_quantity]`                           | Object | false       | Тоо хэмжээг засах боломжтой болгох               |
+| `items[0][adjustable_quantity][enabled]`                  | Bool   | true        | Тоо хэмжээг засах боломж идэвхтэй эсэх           |
+| `items[0][adjustable_quantity][min]`                      | Number | false       | Тоо хэмжээ талбарт оруулж болох хамгийн бага дүн |
+| `items[0][adjustable_quantity][max]`                      | Number | false       | Тоо хэмжээ талбарт оруулж болох хамгийн их дүн   |
 
 **Жишээ хүсэлт**
 
