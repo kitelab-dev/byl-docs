@@ -40,7 +40,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/kitelabs-dev/byl-docs' }
+      { icon: 'github', link: 'https://github.com/kitelab-dev/byl-docs' }
     ],
 
     docFooter: {

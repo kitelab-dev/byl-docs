@@ -6,7 +6,7 @@ require 'recipe/common.php';
 
 // Config
 
-set('repository', 'git@github.com:kitelabs-dev/byl-docs.git');
+set('repository', 'git@github.com:kitelab-dev/byl-docs.git');
 
 add('shared_files', []);
 add('shared_dirs', []);
