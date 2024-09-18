@@ -36,3 +36,11 @@ API дуудах http method-ууд:
   }
 }
 ```
+
+## Төсөл
+
+Тухайн нэг төсөлийн хүрээнд ашиглагдах API endpoint ууд бүгд `/api/v1/projects/:id` хаягаар эхлэнэ. Жишээ нь: `GET: /api/v1/projects/1` болон `POST: /api/v1/projects/1/invoices` гэх мэт. 
+
+`:id` нь төсөлийн дугаарыг илэрхийлэх бөгөөд веб хуудасны төслийн тохиргоо цэснээс харах боломжтой.
+
+![Byl Project ID](/img/docs/project-id.png)
