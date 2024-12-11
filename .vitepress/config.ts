@@ -2,10 +2,10 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Byl docs",
-  description: "Byl developer documentation",
+  title: "Byl гарын авлага",
+  description: "Byl хөгжүүлэгийн гарын авлага",
   themeConfig: {
-    siteTitle: 'Byl docs',
+    siteTitle: 'Byl гарын авлага',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Byl', link: 'https://byl.mn/', target: '_self' },
